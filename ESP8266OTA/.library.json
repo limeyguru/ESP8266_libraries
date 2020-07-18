@@ -1,0 +1,30 @@
+{
+    "name": "ESP8266OTA",
+    "version": "1.0",
+    "keywords": [
+        "OTA",
+        "upload"
+    ],
+    "description": "Wrapper for 'ArduinoOTA' to simplify inclusion in projects",
+    "frameworks": [
+        "arduino"
+    ],
+    "platforms": [
+        "espressif8266",
+        "espressif32"
+    ],
+    "authors": [
+        {
+            "email": "ken@boothsoftware.com",
+            "url": null,
+            "maintainer": true,
+            "name": "limeyguru"
+        }
+    ],
+    "dependencies": [
+        {
+            "name": "ArduinoOTA",
+            "version": "1.0"
+        }
+    ]
+}

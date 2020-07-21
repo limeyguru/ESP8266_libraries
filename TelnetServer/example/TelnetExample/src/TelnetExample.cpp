@@ -12,7 +12,7 @@ void wifiManagerInit()
     WiFiManager WFM;
     WFM.setDebugOutput(false);
 
-#ifdef VERBOSE
+#ifdef TELNET_VERBOSE
     //set callback that gets called when connecting to previous WiFi fails, and enters Access Point mode
     WFM.setAPCallback([](WiFiManager *myWiFiManager) {
         Serial.println(F("Entered config mode"));
@@ -28,7 +28,7 @@ void wifiManagerInit()
     // and goes into a blocking loop awaiting configuration
     if (!WFM.autoConnect())
     {
-#ifdef VERBOSE
+#ifdef TELNET_VERBOSE
         Serial.println(F("failed to connect and hit timeout"));
 #endif
         //reset and try again, or maybe put it to deep sleep

@@ -1,0 +1,28 @@
+{
+    "name": "TelnetServer",
+    "version": "1.0.0",
+    "description": "A \"TelnetServer\" is a library that implements a simple Telnet server.",
+    "keywords": "Telnet, communication, client, connection",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/limeyguru/limeyguru/ESP8266_libraries"
+    },
+    "authors": [
+        {
+            "name": "Ken Booth",
+            "email": "ken@boothsoftware.com"
+        }
+    ],
+    "dependencies": [
+        {
+            "name": "ESP8266WiFi",
+            "version": ">=1.0.0"
+        },
+        {
+            "name": "WiFiManager.h",
+            "version": ">=0.15.0"
+        }
+    ],
+    "frameworks": "*",
+    "platforms": "*"
+}
